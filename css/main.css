@@ -16,10 +16,28 @@
     --scienceColor: #C84AE0;
     --travelColor: #9CF0CF;
     --educationColor: #F1CC59;
+
+    --darkMain: #19161F;
+    --darkGray: rgba(255, 255, 255, 0.05);
+
 }
 
 .container {
     width: calc(100% - 2rem);
     max-width: 1400px;
     margin-inline: auto;
+}
+
+/* blogGrid */
+
+.blogGrid {
+
+}
+
+.blogColumns {
+
+}
+
+.blogCard {
+    width: calc(100% - 4rem) / 3;
 }
