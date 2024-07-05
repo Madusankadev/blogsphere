@@ -17,6 +17,18 @@
     --travelColor: #9CF0CF;
     --educationColor: #F1CC59;
 
+
+    --smallRadius:8px;
+    --bigRadius:32px;
+
+    --mainFont:"Raleway", sans-serif;
+    --bodyFont:"Poppins", sans-serif;
+
+    --heading50:50px;
+    --heading28:28px;
+    --heading22:22px;
+    --heading18px:18px;
+    
     --darkMain: #19161F;
     --darkGray: rgba(255, 255, 255, 0.05);
 
@@ -41,3 +53,4 @@
 .blogCard {
     width: calc(100% - 4rem) / 3;
 }
+
