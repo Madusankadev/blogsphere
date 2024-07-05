@@ -25,6 +25,7 @@
     --bodyFont:"Poppins", sans-serif;
 
     --heading50:50px;
+    --heading36:36px;
     --heading28:28px;
     --heading22:22px;
     --heading18px:18px;
@@ -72,21 +73,54 @@
 
 /* minu - singleBlog */
 
-.blogTopic{
+.singleBlog .blogTopic{
     margin-top: 50px;
     margin-bottom: 10px;
+    font-family: var(--mainFont);
+    font-size: var(--heading36);
+    color: #282828;
+    font-weight: 900;
 }
 
-.optionBtn{
+.singleBlog .optionBtn{
     display: flex;
     justify-content: end;
 }
 
-.saveBtn{
+.singleBlog button{
+    font-size: 22px;
+    font-weight: 500px;
+    font-family: var(--mainFont);
+    padding: 18px 24px;
+    padding-left: 50px;
+    border: 0.4px solid #282828;
+    border-radius: var(--smallRadius);
+    background: transparent;
+
+}
+
+.singleBlog  .pdfBtn{
+    background: url(../Resources/pdfIcon.svg) no-repeat 8px center;
+    background-size: 32px;
+}
+
+.singleBlog .pdfBtn{
     margin-left: 15px;
 }
 
-.blogImgBox{
+.singleBlog .favBtn{
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    justify-content: space-between;
+}
+
+.favBtn span{
+    margin-left: 15px;
+}
+
+
+.singleBlog .blogImgBox{
     margin-top: 70px;
     display: flex;
    justify-content: center;
@@ -152,8 +186,20 @@
 
 .singleBlog .boxLineDiv{
     width: 350px;
-    border-bottom: 0.4px solid ;
+    border-bottom: 0.4px solid #282828;
+    margin-inline: auto;
+}
 
+.singleBlog .feedbackImg{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.singleBlog .feedbackImg div{
+    margin-inline: 8px;
 }
 
 
