@@ -54,3 +54,106 @@
     width: calc(100% - 4rem) / 3;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* minu - singleBlog */
+
+.blogTopic{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.optionBtn{
+    display: flex;
+    justify-content: end;
+}
+
+.saveBtn{
+    margin-left: 15px;
+}
+
+.blogImgBox{
+    margin-top: 70px;
+    display: flex;
+   justify-content: center;
+}
+
+.singleBlog > .blogImgBox > img{
+    border-radius: 32px;
+}
+
+.blogContent{
+    margin-top: 80px;
+}
+
+.blogContent p{
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.singleBlog > .imgSection{
+    margin-top: 60px;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.imgSection img{
+    border-radius: 32px;
+}
+
+.singleBlog > .imgSection > img:nth-child(2){
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.singleBlog .otherContent p{
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.singleBlog .otherContent{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.otherContent div{
+    width: 45%;
+}
+
+.singleBlog .blogEndRow{
+    display: flex;
+    justify-content: space-between;
+}
+
+.singleBlog .blogEndRow{
+    margin-top: 110px;
+}
+
+.singleBlog .feedbackSection > h3{
+    margin-top: 60px;
+    text-align: center;
+
+}
+
+.singleBlog .boxLineDiv{
+    width: 350px;
+    border-bottom: 0.4px solid ;
+
+}
+
+
