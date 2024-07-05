@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --fashionColor: #E19CD0;
+    --healthColor: #43EE7C;
+    --foodColor: #F09390;
+    --economyColor: #ED3E67;
+    --techColor: #3BC2F2;
+    --scienceColor: #C84AE0;
+    --travelColor: #9CF0CF;
+    --educationColor: #F1CC59;
+}
