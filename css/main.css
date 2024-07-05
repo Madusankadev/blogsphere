@@ -38,7 +38,7 @@
 
     --red: #FE231F;
 
-    --numberOfCardForBlogGrid: 3;
+    --setBlogColumn: calc(100% - 3rem );
 
 }
 
@@ -65,8 +65,8 @@
 }
 
 .blogColumns {
-    width: calc((calc(100% - 4rem )) / var(--numberOfCardForBlogGrid));
-    margin-right: 16px;
+    width: calc( var(--setBlogColumn) / 3);
+    margin-inline: 8px;
 }
 
 /* cards */
@@ -148,3 +148,14 @@
     margin-top: 20px;
 }
 
+@media screen and (max-width: 1000px) {
+    .blogColumns {
+        width: calc( (calc(100% - 2rem)) / 2);
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .blogColumns {
+        width: 100%;
+    }
+}
