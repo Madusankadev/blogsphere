@@ -17,6 +17,8 @@
     --travelColor: #9CF0CF;
     --educationColor: #F1CC59;
 
+    --blogAddsColor: rgba(40, 40, 40, .2);
+
 
     --smallRadius:8px;
     --bigRadius:32px;
@@ -27,30 +29,122 @@
     --heading50:50px;
     --heading28:28px;
     --heading22:22px;
-    --heading18px:18px;
+    --text18:18px;
+    --heading36: 36px;
     
     --darkMain: #19161F;
     --darkGray: rgba(255, 255, 255, 0.05);
+    --darkText: #282828;
+
+    --red: #FE231F;
+
+    --numberOfCardForBlogGrid: 3;
 
 }
 
 .container {
     width: calc(100% - 2rem);
-    max-width: 1400px;
+    max-width: 1200px;
     margin-inline: auto;
+}
+
+.subHeading {
+    color: var(--darkText);
+    font-size: var(--heading28);
+    font-family: var(--mainFont);
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 /* blogGrid */
 
 .blogGrid {
-
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .blogColumns {
-
+    width: calc((calc(100% - 4rem )) / var(--numberOfCardForBlogGrid));
+    margin-right: 16px;
 }
 
+/* cards */
+
+.fashionCard {
+    background: var(--fashionColor);
+}
+
+.healthCard {
+    background: var(--healthColor);
+}
+
+.educationCard {
+    background: var(--educationColor);
+}
+
+.scienceCard {
+    background: var(--scienceColor);
+}
+
+.foodCard {
+    background: var(--foodColor);
+}
+
+.travelCard {
+    background: var(--travelColor);
+}
+
+.economyCard {
+    background: var(--economyColor);
+}
+
+.blogAdds {
+    background: var(--blogAddsColor);
+    padding-top: 150px;
+    padding-bottom: 80px;
+    text-align: center;
+    color: var(--darkText);
+}
+
+.blogAdds h5 {
+    font-family: var(--mainFont);
+    font-size: var(--heading36);
+}
+
+.blogAdds p {
+    font-family: var(--bodyFont);
+    font-size: var(--text18);
+    margin-top: 10px;
+}
+
+
+
 .blogCard {
-    width: calc(100% - 4rem) / 3;
+    border-radius: var(--smallRadius);
+    margin-bottom: 16px;
+}
+
+.blogCardText {
+    padding: 40px 30px;
+    font-family: var(--mainFont);
+    color: var(--darkText);
+}
+
+.blogCardText h2 {
+    letter-spacing: 1.5%;
+    font-size: var(--heading36);
+}
+
+.blogCardText p {
+    opacity: 50%;
+    margin-top: 20px;
+    font-size: var(--bodyFont);
+}
+
+.blogCardText h4 {
+    font-size: var(--heading22);
+    font-weight: 500;
+    margin-top: 20px;
 }
 
