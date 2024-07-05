@@ -48,6 +48,10 @@
     margin-inline: auto;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .subHeading {
     color: var(--darkText);
     font-size: var(--heading28);
@@ -158,4 +162,27 @@
     .blogColumns {
         width: 100%;
     }
+}
+
+
+/* home big text animation */
+
+.bigAnimationTextBox {
+    /* overflow: hidden; */
+}
+
+.bigAnimationText {
+    font-family: var(--mainFont);
+    font-size: 150px;
+    color: var(--darkText);
+    display: block;
+}
+
+.bigAnimationTextBox > .bigAnimationText:nth-child(1) {
+    margin-left: -50%;
+}
+
+.bigAnimationTextBox > .bigAnimationText:nth-child(2) {
+    margin-right: -80%;
+    text-align: right;
 }
