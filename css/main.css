@@ -17,3 +17,7 @@
     --travelColor: #9CF0CF;
     --educationColor: #F1CC59;
 }
+body{
+    background-color: #3BC2F2;
+    height: 100vh;
+}
