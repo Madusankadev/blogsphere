@@ -16,8 +16,16 @@
     --scienceColor: #C84AE0;
     --travelColor: #9CF0CF;
     --educationColor: #F1CC59;
-}
-body{
-    background-color: #3BC2F2;
-    height: 100vh;
+
+    --smallRadius:8px;
+    --bigRadius:32px;
+
+    --mainFont:"Raleway", sans-serif;
+    --bodyFont:"Poppins", sans-serif;
+
+    --heading50:50px;
+    --heading28:28px;
+    --heading22:22px;
+    --heading18px:18px;
+    
 }
