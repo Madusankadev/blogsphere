@@ -168,7 +168,7 @@ body {
 /* home big text animation */
 
 .bigAnimationTextBox {
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .bigAnimationText {
@@ -176,13 +176,6 @@ body {
     font-size: 150px;
     color: var(--darkText);
     display: block;
+    transform: translateX(70%);
 }
 
-.bigAnimationTextBox > .bigAnimationText:nth-child(1) {
-    margin-left: -50%;
-}
-
-.bigAnimationTextBox > .bigAnimationText:nth-child(2) {
-    margin-right: -80%;
-    text-align: right;
-}
