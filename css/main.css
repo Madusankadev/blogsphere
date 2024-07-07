@@ -385,6 +385,7 @@ footer p {
     transition: all ease-in-out 300ms;
 }
 
+.blogDisplayChange .blogGrid:hover,
 .blogList:hover {
     background: #caf5e4;
 }
