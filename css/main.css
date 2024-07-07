@@ -385,7 +385,6 @@ footer p {
     transition: all ease-in-out 300ms;
 }
 
-.blogGrid:hover ,
 .blogList:hover {
     background: #caf5e4;
 }
@@ -455,6 +454,14 @@ footer p {
 
 .closeFilter:hover {
     background: var(--themeColor);
+}
+
+.searchResult {
+    margin-top: 80px;
+}
+
+.searchResult .blogColumns {
+    align-self: flex-start;
 }
 
 @media screen and (max-width: 750px) {
