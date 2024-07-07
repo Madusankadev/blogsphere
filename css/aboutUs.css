@@ -1,0 +1,82 @@
+.aboutUs h2{
+    font-family: var(--mainFont);
+    font-size: clamp(3.125rem, 6.25vw + 1.563rem, 6.25rem);
+}
+
+.aboutUs .aboutusText{
+    font-family: var(--bodyFont);
+    font-size: clamp(1.125rem, 0.5vw + 1rem, 1.375rem);
+}
+
+.aboutUs :nth-child(1){
+    text-align: center;
+    
+}
+
+.aboutUs :nth-child(2){
+    display: flex;
+    justify-content: center;
+}
+
+.aboutUs .aboutUsStart{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.missionVisionBox h3{
+    font-family: var(--bodyFont);
+    font-size: var(--text18);
+    font-weight: 800;
+    color: var(--darkText);
+}
+
+.missionVisionBox p{
+    font-family: var(--bodyFont);
+    font-size: var(--heading22);
+    color: var(--darkText);
+    opacity: 80%;
+}
+
+.aboutUs .userFeedbackBox{
+    margin-top: 200px;
+    margin-bottom: 150px;
+    border: 1px solid black;
+    border-radius: 32px;
+    padding: 8px 150px;
+}
+
+.userImg{
+    position: absolute;
+}
+
+.userImg img{
+    border-radius: 360px;
+}
+
+
+
+.userFeedbackBox h3{
+    margin-top: 50px;
+    font-family: var(--mainFont);
+    font-size: var(--heading22);
+    font-weight: 600;
+}
+
+.userFeedbackBox h4{
+    font-family: var(--mainFont);
+    font-size: var(--text18);
+    font-weight: 400;
+}
+
+.userFeedbackBox .userMsg{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: var(--bodyFont);
+    font-size: var(--heading22);
+    font-weight: 400;
+
+}
+
+
+
