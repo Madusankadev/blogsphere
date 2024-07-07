@@ -28,7 +28,7 @@
     --heading36:36px;
     --heading28:28px;
     --heading22:22px;
-    --heading18px:18px;
+    --heading18:18px;
     
     --darkMain: #19161F;
     --darkGray: rgba(255, 255, 255, 0.05);
@@ -77,9 +77,17 @@
     margin-top: 50px;
     margin-bottom: 10px;
     font-family: var(--mainFont);
-    font-size: var(--heading36);
+    font-size: clamp(1.563rem, 1.375vw + 1.219rem, 2.25rem);
     color: #282828;
     font-weight: 900;
+}
+
+.singleBlog .blogInfoBox{
+    font-family: var(--mainFont);
+    font-size: clamp(1rem, 0.75vw + 0.813rem, 1.375rem);
+    font-weight: 600;
+    color: #282828;
+    opacity: 80%;
 }
 
 .singleBlog .optionBtn{
@@ -91,24 +99,22 @@
     font-size: 22px;
     font-weight: 500px;
     font-family: var(--mainFont);
-    padding: 18px 24px;
-    padding-left: 50px;
+    padding: 10px 25px;
+    padding-left: 66px;
     border: 0.4px solid #282828;
     border-radius: var(--smallRadius);
     background: transparent;
-
 }
 
 .singleBlog  .pdfBtn{
-    background: url(../Resources/pdfIcon.svg) no-repeat 8px center;
-    background-size: 32px;
-}
-
-.singleBlog .pdfBtn{
+    font-size: clamp(1rem, 0.25vw + 0.938rem, 1.125rem);
+    background: url(../Resources/pdfIcon.svg) no-repeat 22px center;
+    background-size: 28px;
     margin-left: 15px;
 }
 
 .singleBlog .favBtn{
+    font-size: clamp(1rem, 0.25vw + 0.938rem, 1.125rem);
     display: flex;
     align-items: center;
     padding-left: 24px;
@@ -135,6 +141,10 @@
 }
 
 .blogContent p{
+    font-family: var(--bodyFont);
+    font-size: var(--heading18);
+    color: #282828;
+    font-weight: 400;
     line-height: 1.5;
     text-align: justify;
 }
@@ -157,37 +167,53 @@
 .singleBlog .otherContent p{
     line-height: 1.5;
     text-align: justify;
+
+    
 }
 
 .singleBlog .otherContent{
     margin-top: 60px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5%;
+
 }
 
 .otherContent div{
-    width: 45%;
+    font-family: var(--bodyFont);
+    font-size: var(--heading18);
+    font-weight: 400;
+    color: #282828;
+    line-height: 1.5;
 }
 
 .singleBlog .blogEndRow{
+    font-family: var(--mainFont);
     display: flex;
     justify-content: space-between;
-}
-
-.singleBlog .blogEndRow{
     margin-top: 110px;
 }
 
+.blogEndRow .shareLink{
+    display: flex;
+    align-items: center;
+}
+
 .singleBlog .feedbackSection > h3{
+    font-family: var(--mainFont);
+    font-size: var(--heading22);
+    font-weight: 300;
+    color: #282828;
     margin-top: 60px;
     text-align: center;
-
 }
 
 .singleBlog .boxLineDiv{
     width: 350px;
-    border-bottom: 0.4px solid #282828;
+    border-bottom: 0.4px solid rgba(40, 40, 40, 30%);
     margin-inline: auto;
+    margin-top: 10px;
+
 }
 
 .singleBlog .feedbackImg{
@@ -196,6 +222,7 @@
     flex-wrap: wrap;
     width: fit-content;
     margin-inline: auto;
+    margin-bottom: 20px;
 }
 
 .singleBlog .feedbackImg div{
@@ -203,3 +230,64 @@
 }
 
 
+@media screen and (max-width:845px) {
+    .optionBtn{
+        margin-top: 30px;
+    }
+
+    .singleBlog .blogImgBox{
+        margin-top: 0;
+        margin-top: 30px;
+    }
+
+    .blogImgBox img{
+        scale: 0.8;
+    }
+
+    .blogContent{
+        margin-top: 0;
+        margin-top: 30px;
+    }
+    
+}
+
+@media screen and (max-width:700px) {
+    .singleBlog .blogImgBox{
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .blogImgBox img{
+        width: 100%;
+    }
+
+    .singleBlog .otherContent{
+        grid-template-columns: 1fr;
+        grid-row-gap: 50px;
+    }
+
+    .singleBlog .favBtn{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .favBtn img{
+        height: 20px;
+    }
+
+    .singleBlog  .pdfBtn{
+        background-size: 20px;
+        padding-left: 60px;
+    }
+
+    .singleBlog .blogEndRow{
+        flex-direction: column;
+        margin-top: 0px;
+        margin-top: 40px;
+    }
+
+    .feedbackImg img{
+        height: 40px;
+    }
+
+}
