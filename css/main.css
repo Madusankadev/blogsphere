@@ -18,6 +18,7 @@
     --educationColor: #F1CC59;
 
     --blogAddsColor: rgba(40, 40, 40, .2);
+    --themeColor: rgba(202, 221, 250, .45);
 
 
     --smallRadius:8px;
@@ -327,4 +328,78 @@ footer p {
     text-align: center;
     padding-top: 14px;
     padding-bottom: 14px;
+}
+
+/* profileViewPage */
+
+.profileViewPage {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-family: var(--mainFont);
+}
+
+.profileViewPage > div {
+    /* border: 1px solid black; */
+}
+
+.profileOptionBox {
+    
+}
+
+.optBox {
+    width: 100%;
+    height: fit-content;
+    padding: 16px ;
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+}
+
+.optBox:hover {
+    background: var(--themeColor);
+}
+
+.optBox h5 {
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.9375rem + 0.25vw, 1.125rem);
+    color: var(--darkText);
+}
+
+
+.userInfoBox {
+    background: var(--themeColor);
+}
+
+.userName {
+    margin-top: 16px;
+}
+
+.userName a{
+    color: var(--darkText);
+    padding-left: 22px;
+}
+
+.bio {
+    padding: 22px;
+}
+
+.bio h5 {
+    font-size: 18px;
+}
+
+.bio p {
+    line-height: 1.5;
+    color: var(--darkText);
+    opacity: .7;
+    margin-top: 12px;
+}
+
+.userContent {
+    grid-column: span 2;
+    padding: 42px 22px;
+    color: var(--darkText);
+}
+
+.userContent h4 {
+    font-size: 1.75rem;
+font-size: clamp(1.75rem, 1.5rem + 1vw, 2.25rem);
 }
