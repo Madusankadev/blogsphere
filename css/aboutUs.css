@@ -1,27 +1,34 @@
 .aboutUs h2{
     font-family: var(--mainFont);
     font-size: clamp(3.125rem, 6.25vw + 1.563rem, 6.25rem);
+    color: var(--darkText);
 }
 
 .aboutUs .aboutusText{
     font-family: var(--bodyFont);
     font-size: clamp(1.125rem, 0.5vw + 1rem, 1.375rem);
+    color: var(--darkText);
 }
 
-.aboutUs :nth-child(1){
+.missionVisionBox{
     text-align: center;
-    
 }
 
-.aboutUs :nth-child(2){
+/* .aboutUs :nth-child(2){
     display: flex;
     justify-content: center;
-}
+} */
 
 .aboutUs .aboutUsStart{
+    text-align: center;
     margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.userFeedbackBox{
+    position: relative;
+    text-align: center;
 }
 
 .missionVisionBox h3{
@@ -41,42 +48,158 @@
 .aboutUs .userFeedbackBox{
     margin-top: 200px;
     margin-bottom: 150px;
-    border: 1px solid black;
+    border: 1px solid var(--darkText);
     border-radius: 32px;
     padding: 8px 150px;
 }
 
 .userImg{
     position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .userImg img{
     border-radius: 360px;
 }
 
-
+.aboutUs .userFeedbackBox{
+    background: url(../Resources/“.svg) no-repeat 80px 40px;
+    background-size:  200px;
+    margin-bottom: 80px;
+}
 
 .userFeedbackBox h3{
     margin-top: 50px;
     font-family: var(--mainFont);
     font-size: var(--heading22);
     font-weight: 600;
+    color: var(--darkText);
 }
 
 .userFeedbackBox h4{
     font-family: var(--mainFont);
     font-size: var(--text18);
     font-weight: 400;
+    color: var(--darkText);
 }
 
 .userFeedbackBox .userMsg{
     margin-top: 20px;
-    margin-bottom: 20px;
     font-family: var(--bodyFont);
-    font-size: var(--heading22);
+    font-size: clamp(1.125rem, 0.462vw + 1.005rem, 1.375rem);
     font-weight: 400;
+    color: var(--darkText);
+}
+
+.blogCount{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 30px;
+}
+
+.blogCount h3{
+    font-family: var(--bodyFont);
+    font-weight: 600;
+    font-size: var(--heading32);
+    color: var(--darkText); 
+}
+
+.blogCount > div{
+    height: 300px;
+}
+
+.blogCount p{
+    font-family: var(--mainFont);
+    font-weight: 100;
+    font-size: var(--heading50);
+    color: var(--darkText);  
+    text-align: center;
 
 }
+
+.blogCount .totalBlog{
+    background: url(../Resources/background1.svg) no-repeat center;
+    background-size:  50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogCount .regUsers{
+    background: url(../Resources/background2.svg) no-repeat center;
+    background-size: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogCount .subscribers{
+    background: url(../Resources/background3.svg) no-repeat center;
+    background-size: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribeFeild{
+    width: 100%;
+    position: relative;
+}
+
+.subscribeFeild input {
+    width: 100%;
+    padding: 8px 16px;
+    height: 50px;
+    border: 1px solid rgba(40, 40, 40, .45);
+    border-radius: var(--smallRadius);
+    font-family: var(--bodyFont);
+    font-size: var(--text18);
+}
+
+.subBtn {
+    padding: 8px 12px;
+    font-family: var(--mainFont);
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #ED436B;
+    color: white;
+    border-radius: var(--smallRadius);
+    border: 0;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.aboutUs .newsLater{
+    font-size: 100px;
+    font-family: var(--mainFont);
+    font-weight: 900;
+    color: var(--darkText);
+    margin-top: 30px;
+    text-align: center;
+}
+
+.socialMedias h3{
+    font-family: var(--bodyFont);
+    font-size: var(--heading28);
+    color: var(--darkText);
+    margin-top: 150px;
+}
+
+.socialMediaIcon{
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    margin-top: 80px;
+    margin-inline: auto;
+    width: fit-content;
+    
+    
+    
+}
+
 
 
 
