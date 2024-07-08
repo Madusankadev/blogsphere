@@ -139,25 +139,25 @@
 
 .blogContent{
     margin-top: 80px;
-    width: 80%;
+    width: 90%;
     margin-inline: auto;
 }
 
 .blogContent p{
-    font-family: var(--mainFont);
+    font-family: var(--bodyFont);
     font-size: 1.125rem;
     font-size: clamp(1.125rem, 1rem + 0.5vw, 1.375rem);
     color: #282828;
     opacity: .9;
     line-height: 1.8;
-    font-weight: 100;
+    font-weight: 200;
     text-align: justify;
 }
 
 .otherContent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 32px;
+    column-gap: 60px;
 }
 
 .singleBlog > .imgSection{
@@ -249,79 +249,3 @@
     }
 }
 
-/* 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:845px) {
-    .optionBtn{
-        margin-top: 30px;
-    }
-
-    .singleBlog .blogImgBox{
-        margin-top: 0;
-        margin-top: 30px;
-    }
-
-    .blogImgBox img{
-        scale: 0.8;
-    }
-
-    .blogContent{
-        margin-top: 0;
-        margin-top: 30px;
-    }
-    
-}
-
-@media screen and (max-width:700px) {
-    .singleBlog .blogImgBox{
-        margin-top: 0;
-        padding-top: 0;
-    }
-
-    .blogImgBox img{
-        width: 100%;
-    }
-
-    .singleBlog .otherContent{
-        grid-template-columns: 1fr;
-        grid-row-gap: 50px;
-    }
-
-    .singleBlog .favBtn{
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .favBtn img{
-        height: 20px;
-    }
-
-    .singleBlog  .pdfBtn{
-        background-size: 20px;
-        padding-left: 60px;
-    }
-
-    .singleBlog .blogEndRow{
-        flex-direction: column;
-        margin-top: 0px;
-        margin-top: 40px;
-    }
-
-    .feedbackImg img{
-        height: 40px;
-    }
-
-} */
