@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -29,11 +28,13 @@
     --bodyFont:"Poppins", sans-serif;
 
     --heading50:50px;
+    --heading36:36px;
     --heading28:28px;
     --heading22:22px;
+
     --text18:18px;
     --heading32: 32px;
-    --heading36: 36px;
+
     
     --darkMain: #19161F;
     --darkGray: rgba(255, 255, 255, 0.05);
@@ -341,6 +342,371 @@ footer p {
     grid-template-columns: repeat(4, 1fr);
     font-family: var(--mainFont);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* minu - singleBlog */
+
+.singleBlog .blogTopic{
+    margin-top: 50px;
+    font-family: var(--mainFont);
+    font-size: clamp(1.563rem, 1.375vw + 1.219rem, 2.25rem);
+    color: #282828;
+    font-weight: 900;
+}
+
+.singleBlog .blogInfoBox{
+    font-family: var(--mainFont);
+    font-size: clamp(0.938rem, -0.125vw + 1.031rem, 1rem);
+    font-weight: 400;
+    color: #282828;
+    opacity: 80%;
+    margin-top: 10px;
+}
+
+.singleBlog .optionBtn{
+    margin-top: 22px;
+    display: flex;
+    justify-content: end;
+}
+
+.singleBlog button{
+    font-size: clamp(0.875rem, 0.75vw + 0.688rem, 1.25rem);
+    font-weight: 500px;
+    cursor: pointer;
+    font-family: var(--mainFont);
+    padding: 10px 25px;
+    padding-left: 66px;
+    border: 0.4px solid rgb(40, 40, 40, .2);
+    border-radius: var(--smallRadius);
+    background: transparent;
+}
+
+.singleBlog  .pdfBtn{
+    font-size: clamp(1rem, 0.25vw + 0.938rem, 1.125rem);
+    background: url(../Resources/pdfIcon.svg) no-repeat 22px center;
+    background-size: 28px;
+    margin-left: 15px;
+}
+
+.singleBlog .favBtn{
+    font-size: clamp(1rem, 0.25vw + 0.938rem, 1.125rem);
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    justify-content: space-between;
+}
+
+.favBtn span{
+    margin-left: 15px;
+}
+
+
+.singleBlog .blogImgBox{
+    margin-top: 70px;
+    display: flex;
+   justify-content: center;
+}
+
+.singleBlog > .blogImgBox > img{
+    border-radius: 32px;
+}
+
+.blogContent{
+    margin-top: 80px;
+    width: 90%;
+    margin-inline: auto;
+}
+
+.blogContent p{
+    font-family: var(--bodyFont);
+    font-size: 1.125rem;
+    font-size: clamp(1.125rem, 1rem + 0.5vw, 1.375rem);
+    color: #282828;
+    opacity: .9;
+    line-height: 1.8;
+    font-weight: 200;
+    text-align: justify;
+}
+
+.otherContent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+}
+
+.singleBlog > .imgSection{
+    margin-top: 60px;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.imgSection img{
+    border-radius: 32px;
+}
+
+.singleBlog .blogEndRow{
+    font-family: var(--mainFont);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.blogEndRow .shareLink{
+    display: flex;
+    align-items: center;
+    color: var(--darkText);
+}
+
+.singleBlog .feedbackSection > h3{
+    font-family: var(--mainFont);
+    font-size: var(--heading22);
+    font-weight: 100;
+    color: #282828;
+    margin-top: 60px;
+    text-align: center;
+}
+
+
+.singleBlog .boxLineDiv{
+    width: 350px;
+    border-bottom: 0.4px solid rgba(40, 40, 40, 30%);
+    margin-inline: auto;
+    margin-top: 10px;
+
+}
+
+.singleBlog .feedbackImg{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin-inline: auto;
+    margin-bottom: 20px;
+}
+
+.singleBlog .feedbackImg div{
+    margin-inline: 5px;
+    cursor: pointer;
+    animation: all ease-in-out 300ms;
+}
+
+.singleBlog .feedbackImg div:hover {
+    scale: 1.1;
+}
+
+@media screen and (max-width: 800px) {
+    .blogContent {
+        width: 95%;
+    }
+
+    .otherContent {
+        grid-template-columns: 1fr;
+        row-gap: 32px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .blogEndRow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shareLink {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .feedbackImg img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+
+/* comment box */
+
+.commentSection {
+    margin-top: 100px;
+}
+
+.commentHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.4rem;
+    font-family: var(--mainFont);
+}
+
+.commentHeader h1 {
+    font-size: 1.6rem;
+    color: hsl(224, 21%, 14%);
+}
+
+.commentBox {
+    font-family: var(--bodyFont);
+}
+
+.notification {
+    padding: 0.001rem .6rem;
+    margin-left: 0.4rem;
+    border-radius: 0.3rem;
+    background-color: hsl(219, 85%, 26%);
+    color: hsl(0, 0%, 100%);
+}
+
+.commentHeader h2 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: hsl(219, 12%, 42%);
+}
+
+.msg-box {
+    display: flex;
+    padding: 1rem 1.5rem;
+    background-color: hsl(210, 60%, 98%);
+    margin-bottom: 0.6rem;
+    position: relative;
+}
+
+.msg-box>div + div {
+    margin-left: 1.2rem;
+}
+
+.msg-box img {
+    height: 3rem;
+}
+
+.chess-img {
+    position: absolute;
+    right: 2rem;
+    align-items: center;
+}
+
+.msg-box div h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: hsl(219, 12%, 42%);
+    margin-bottom: 0.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.msg-box div h3 span {
+    font-weight: 800;
+}
+
+.msg-box>div>h3>span + span {
+    margin-left: 0.6rem;
+}
+
+.msg-box span {
+    color: hsl(219, 12%, 42%);
+}
+
+.msg-box div h3 span:nth-child(1) {
+    color: hsl(224, 21%, 14%);
+}
+
+.commentBox p {
+    font-size: 1.05rem;
+    color: hsl(219, 12%, 42%);
+    margin: 0.8rem 1.5rem 2rem 6rem;
+    padding: 1.2rem;
+    border: 1px solid hsl(205, 33%, 90%);
+}
+
+.commentBox span.club {
+    color: hsl(219, 85%, 26%);
+}
+
+.hiden {
+    display: none;
+    transition: display 250ms ease-in-out;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background-color: hsl(1, 90%, 64%);
+    margin-left: 0.7rem;
+}
+
+.name {
+    margin-right: 0.6rem;
+}
+
+.name:hover,
+.commentBox h3>span:hover,
+.commentBox >h2:hover,
+.commentBox p:hover {
+    cursor: pointer;
+    color: hsl(219, 85%, 26%) !important;
+    transition: color ease-in;
+    transition-duration: 100ms;
+}
+
+.commentBox p:hover {
+    background-color: hsl(205, 33%, 90%);
+    transition: background-color ease-in;
+    transition-duration: 200ms;
+}
+
+.msg-box>div+div>span {
+    display: block !important;
+}
+
+@media screen and (max-width: 928px) {
+    .msg-box>div+div>* , .dot{
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        padding: 1.8rem 1.3rem;
+    }
+
+    .commentBox p {
+        margin-left: 2rem;
+        margin-right: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .commentBox >h1 {
+        font-size: 1.2rem;
+    }
+
+    .commentBox >h2 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .chess-img {
+        display: none !important;
+    }
+}
+
+
 
 .profileViewPage > div {
     /* border: 1px solid black; */
@@ -665,7 +1031,7 @@ font-size: clamp(1.75rem, 1.5rem + 1vw, 2.25rem);
     .blogColumns {
         width: 48%;
     }
-} */
+} 
 
 @media screen and (max-width: 500px) {
 
@@ -676,3 +1042,4 @@ font-size: clamp(1.75rem, 1.5rem + 1vw, 2.25rem);
         width: 100%;
     }
 } 
+
