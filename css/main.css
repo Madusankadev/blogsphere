@@ -76,6 +76,7 @@ body {
 .blogColumns {
     width: calc( var(--setBlogColumn) / 3);
     margin-inline: 8px;
+    align-self: flex-start;
 }
 
 /* cards */
@@ -473,7 +474,6 @@ font-size: clamp(1.75rem, 1.5rem + 1vw, 2.25rem);
 
    
 }
-=======
 
 /* blogSearchBox */
 
@@ -636,3 +636,43 @@ font-size: clamp(1.75rem, 1.5rem + 1vw, 2.25rem);
     }
 }
 
+
+/* my blog section */
+/* 
+.myBlogFilterBox {
+    display: flex;
+}
+
+.myBlogGrid {
+    margin-top: 32px;
+    width: 100%;
+    display: flex;
+ flex-wrap: wrap; 
+} 
+
+.myBlogGrid .blogCard {
+    width: 100%;
+} 
+.myBlogGrid h2 {
+    font-size: 22px;
+}
+
+.myBlogGrid h4 {
+    font-size: 12px;
+}
+
+@media screen and (min-width: 1000px) {
+    .blogColumns {
+        width: 48%;
+    }
+} */
+
+@media screen and (max-width: 500px) {
+
+    .myBlogGrid {
+        flex-wrap: wrap;
+    }
+    .blogColumns {
+        width: 100%;
+    }
+} 
