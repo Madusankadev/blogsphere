@@ -362,6 +362,10 @@ footer p {
 
 /* minu - singleBlog */
 
+.singleBlog {
+    margin-top: 140px;
+}
+
 .singleBlog .blogTopic{
     margin-top: 50px;
     font-family: var(--mainFont);
