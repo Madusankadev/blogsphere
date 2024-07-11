@@ -1,0 +1,53 @@
+.collection{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-family: var(--mainFont);
+}
+
+.collectionbody{
+    grid-column: span 3;
+}
+
+.collectionhead{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+
+.collectionSlider {
+    /* grid-column: span 1; */
+    height: 350px;
+    background: var(--garyWhite);
+    border-radius: var(--smallRadius);
+    margin-top: 22px;
+    
+}
+
+.collectioncart{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-family: var(--mainFont);
+    grid-gap: 10px;
+
+}
+
+.savedCollectin{
+    height: 165px;
+    background: black;
+    border-radius: var(--smallRadius);
+}
+
+.collectionSlider1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: var(--mainFont);
+    grid-gap: 5px;
+    padding: 5px;
+}
+
+.add1{
+    color: black;
+    background-color: black;
+}
+
