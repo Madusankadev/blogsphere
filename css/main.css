@@ -114,6 +114,10 @@ body {
     background: var(--techColor);
 }
 
+.blogCard img{
+    border-radius: 8px;
+}
+
 .blogAdds {
     background: var(--blogAddsColor);
     padding-top: 150px;
