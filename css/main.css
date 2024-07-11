@@ -646,6 +646,15 @@ font-size: clamp(1.75rem, 1.5rem + 1vw, 2.25rem);
     margin-bottom: 20px;
 }
 
+.profileSet h4 p{
+    color: var(--darkText);
+    font-size: var(--heading22);
+}
+
+.profileSet p{
+    margin-top: 11px;
+}
+
 .profileSet h4{
     margin-top: 15%;
 }
