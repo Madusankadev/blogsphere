@@ -6,35 +6,49 @@
 
 .collectionbody{
     grid-column: span 3;
+    
 }
 
 .collectionhead{
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    margin-bottom: 15px;
 }
 
 
 .collectionSlider {
     /* grid-column: span 1; */
-    height: 350px;
-    background: var(--garyWhite);
-    border-radius: var(--smallRadius);
-    margin-top: 22px;
+   
+    /* align-items: center; */
+    /* margin-top: 22px;
+    margin-bottom: 22px; */
     
+}
+
+.font{
+    font-family: var(--mainFont);
+    font-size: var(--text18);
+    font-weight: 600;
+
+}
+
+.time{
+    font-size: 14px;
+    font-family: var(--mainFont);
+
 }
 
 .collectioncart{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     font-family: var(--mainFont);
-    grid-gap: 10px;
+    grid-gap: 22px;
 
 }
 
 .savedCollectin{
-    height: 165px;
-    background: black;
+    /* background: black; */
     border-radius: var(--smallRadius);
 }
 
@@ -42,12 +56,98 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     font-family: var(--mainFont);
-    grid-gap: 5px;
-    padding: 5px;
+    grid-gap: 10px;
+    padding: 22px;
+    height: 350px;
+    background: var(--garyWhite);
+    border-radius: var(--smallRadius);
 }
 
 .add1{
     color: black;
     background-color: black;
 }
+
+.cl1{
+    font-family: var(--mainFont);
+
+}
+
+
+@media screen and (max-width: 1100px){
+    .navv {
+        position: absolute;
+        display: none;
+    }
+
+    .collection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 700px){
+    .navv {
+        position: absolute;
+        display: none;
+    }
+
+    .collectioncart {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 900px){
+    .navv {
+        position: absolute;
+        display: none;
+    }
+
+    .collectioncart {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .navv {
+        position: absolute;
+        display: none;
+    }
+
+    .collectioncart {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+.blogCardTextCollection {
+    padding: 40px 30px;
+    font-family: var(--mainFont);
+    color: var(--darkText);
+}
+
+.blogCardTextCollection h2 {
+    letter-spacing: 1.5%;
+    font-size: var(--heading22);
+}
+
+.blogCardTextCollection p {
+    opacity: 50%;
+    margin-top: 20px;
+    font-size: var(--bodyFont);
+}
+
+.blogCardTextCollection h4 {
+    font-size: var(--heading20);
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
 
