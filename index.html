@@ -4,45 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogsphere</title>
+    <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-
     <header>
         <nav>
             <section>
-                <div class="container navBar">
-
-                    <div class="menuIcon">
-                        <img src="./icon/menu.svg" alt="menu" height="32" width="32">
+                <nav class="nav">
+                    <div class="container navBox navBar">
+                        <div>
+                            <img src="./icon/Blogs.svg" alt="logo" height="32" >
+                        </div>
+        
+                        <div class="mobileChangeNav" id="mobileChangeNav">
+                            <div class="closeBtn" onclick="closeBtn()">
+                                <img src="./icon/close.svg" alt="close menu" height="22">
+                            </div>
+                            <ul >
+                                <li><div class="navMemberBtn">Become a Member</div></li>
+                                <li><a href="#" class="navLink">About Us</a></li>
+                                <li><a href="#" class="navLink">Search</a></li>
+                                <li><a href="#" class="navLink">All</a></li>
+                            </ul>
+                        </div>
+        
+                        <div class="mobileMenuBtn" id="mobileMenuBtn" onclick="openBtn()">
+                            <img src="./icon/menu.svg" alt="menu" height="32">
+                        </div>
                     </div>
-
-                    <div>
-                        <img src="./icon/Blogs.svg" alt="logo" height="32px">
-                    </div>
-
-                    <div class="navLinksBox">
-                       <ul>
-
-                        <li class="navLinks navMemberBtn">
-                            <a href="/">Become a Member</a>
-                        </li>
-
-                        <li class="navLinks">
-                            <a href="/">About Us</a>
-                        </li>
-
-                        <li class="navLinks">
-                            <a href="/">Search</a>
-                        </li>
-
-                        <li class="navLinks">
-                            <a href="/">All</a>
-                        </li>
-
-                       </ul>
-                    </div>
-                </div>
+                </nav>
             </section>
         </nav>
 
@@ -103,7 +94,6 @@
             </div>
         </section>
     </header>
-    
     <section>
         <div class="container">
             <h3 class="subHeading">Explore</h3>
@@ -322,6 +312,7 @@
             <p></p>
         </section>
     </footer>
+    <script src="./js/nav.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
