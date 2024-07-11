@@ -1,0 +1,33 @@
+.myBlogFilterBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.myBlogGrid {
+    width: 100%;
+    display: flex;
+    margin-top: 32px;
+}
+
+.blogColumns {
+    width: 50%;
+}
+
+.blogCardText h2 {
+    font-size: 1.4em;
+}
+
+.blogCardText h4 {
+    font-size: .8em;
+}
+
+@media screen and (max-width: 560px) {
+
+    .myBlogGrid {
+        flex-wrap: wrap;
+    }
+
+    .blogColumns {
+        width: 95%;
+    }
+}
