@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <section>
+                <nav class="nav">
+                    <div class="container navBox navBar">
+                        <div>
+                            <img src="./icon/Blogs.svg" alt="logo" height="32" >
+                        </div>
+        
+                        <div class="mobileChangeNav" id="mobileChangeNav">
+                            <div class="closeBtn" onclick="closeBtn()">
+                                <img src="./icon/close.svg" alt="close menu" height="22">
+                            </div>
+                            <ul >
+                                <li><div class="navMemberBtn">Become a Member</div></li>
+                                <li><a href="#" class="navLink">About Us</a></li>
+                                <li><a href="#" class="navLink">Search</a></li>
+                                <li><a href="#" class="navLink">All</a></li>
+                            </ul>
+                        </div>
+        
+                        <div class="mobileMenuBtn" id="mobileMenuBtn" onclick="openBtn()">
+                            <img src="./icon/menu.svg" alt="menu" height="32">
+                        </div>
+                    </div>
+                </nav>
+            </section>
+        </nav>
+    </header>
+
+    <section style="margin-top: 120px;">
+        <div class="container">
+            <h3 class="subHeading">Search</h3>
+        </div>
+    </section>
+
+    <section>
+
+        <div class="container blogSearchBox">
+            <input type="text" class="blogSearch" placeholder="  search blog">
+        </div>
+
+        <div class="container blogResult">
+            <p><span>Result for </span> “the Educational Robot Explorer”</p>
+        </div>
+
+        <div class="blogDisplayChange container">
+            <div>
+                <div>
+                    <p>Display mode</p>
+                </div>
+                <div class="blogGrid">
+                    <img src="./icon/blogGrid.svg" alt="grid view" height="24" width="24">
+                </div>
+                <div class="blogList">
+                    <img src="./icon/blogList.svg" alt="grid List" height="24" width="24">
+                </div>
+            </div>
+        </div>
+
+        <div class="container searchFilterBox">
+
+            <div class="searchFilter">
+                <img src="./icon/btnFilter.svg" alt="Filter" height="32" width="32">
+                <span>filters</span>
+                <div class="filterCount">5</div>
+            </div>
+
+            <div class="searchFilter">
+                <span>Travel</span>
+                <div class="closeFilter"><img src="./icon/close.svg" alt="close" height="14" width="14"></div>
+            </div>
+
+            <div class="searchFilter">
+                <span>New</span>
+                <div class="closeFilter"><img src="./icon/close.svg" alt="close" height="14" width="14"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="searchResult">
+ 
+            <div class="container listBlog">
+    
+                <div class="blogCard healthCard blogImgBox">
+                    <div class="fasioImg listImgBox">
+                        <img src="./img/fasioImg.jpg" alt="fasioImg" >
+                    </div>
+                    <div class="blogCardText">
+                        <h2>MechaMaven: the Educational Robot Explorer</h2>
+                        <p>5 min Read</p>
+                        <h4>Tech</h4>
+                    </div>
+                </div>
+    
+                <div class="blogCard fashionCard blogImgBox">
+                    <div class="fasioImg listImgBox">
+                        <img src="./img/healthImg.jpg" alt="fasioImg" >
+                    </div>
+                    <div class="blogCardText">
+                        <h2>MechaMaven: the Educational Robot Explorer</h2>
+                        <p>5 min Read</p>
+                        <h4>Tech</h4>
+                    </div>
+                </div>
+    
+            </div>
+
+        <p class="loadMore">Load More</p>
+    </section>
+
+    <section>
+        <div class="footerBox">
+            <p>&copy; blogspare. www.blogspare.com</p>
+        </div>
+    </section>
+    <script src="./js/nav.js"></script>
+</body>
+
+</html>
