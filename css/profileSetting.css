@@ -2,13 +2,14 @@
 /* Profile setting */
 .profileSet{
     background: white;
+    padding: 8% 5%;
 }
 
-.profileSet img{
-    width: 100%;
+/* .profileSet img{
+    /* width: 100%;
     cursor: pointer;
     margin-bottom: 20px;
-}
+} */ 
 
 .profileSet h4 p{
     color: var(--darkText);
@@ -16,38 +17,45 @@
 }
 
 .profileSet p{
-    margin-top: 11px;
+    margin-top: 14px;
 }
 
 .profileSet h4{
-    margin-top: 15%;
+    margin-top: 32px;
+    font-size: var(--text18);
 }
 
 
 .sm{
     display: flex;
-    flex-direction: row;
+    align-items: center;
     margin-top: 2%;
+    cursor: pointer;
 }
 
 .sm p{
-    margin-top: 3%;
+    font-size: var(--text18);
+    margin-top: 0;
+    margin-left: 15px;
+}
+
+.pswd {
+  font-size: var(--text18);
+  color: var(--darkText);
+  margin-bottom: 14px;
 }
 
 .profileSet button{
-    border: solid;
-    border-radius: 8px;
-    border-color: var(--garyWhite);
-    color: var(--garyWhite);
-    background: var(--darkText);
-    width: 25%;
-    height: 35px;
+    border: 1px solid var(--darkText);
+    border-radius: var(--smallRadius);
     cursor: pointer;
+    background: transparent;
+    padding: 8px 22px;
+    font-size: var(--text18);
 }
 
 .switch {
     margin-top: 10px;
-    margin-left: 10%;
     position: relative;
     display: inline-block;
     width: 60px;
