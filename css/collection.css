@@ -53,14 +53,13 @@
 }
 
 .collectionSlider1{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     font-family: var(--mainFont);
     grid-gap: 10px;
-    padding: 22px;
+    padding: 12px;
     height: 350px;
     background: var(--garyWhite);
     border-radius: var(--smallRadius);
+    position: relative;
 }
 
 .add1{
@@ -146,9 +145,7 @@
     border-radius: 8px;
 }
 
-.fasioImg img{
-    border-radius: 8px 8px 0px 0px;
-}
+
 
 
 
