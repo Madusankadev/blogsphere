@@ -19,7 +19,7 @@
     --blogAddsColor: rgba(40, 40, 40, .2);
     --themeColor: rgba(202, 221, 250, .45);
 
-    --themeColor: #caf5e4;
+    --themeColor: #e9e9e9;
 
     --smallRadius:8px;
     --bigRadius:32px;
@@ -225,6 +225,12 @@ body {
     background: var(--healthColor);
     position: absolute;
     bottom: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .categorySilderBox {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* learnContentBox */
@@ -743,6 +749,7 @@ footer p {
 
 .userInfoBox {
     background: var(--themeColor);
+
 }
 
 .userName {
@@ -821,7 +828,7 @@ font-size: clamp(1.75rem, 1.5rem + 1vw, 2.25rem);
     .userImgBox {
         width: 150px;
         height: 150px;
-        margin-top: 20px;
+        margin-top: 180px;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -886,6 +893,16 @@ font-size: clamp(1.75rem, 1.5rem + 1vw, 2.25rem);
 .blogDisplayChange > div > div {
     margin-inline: 15px;
     border-radius: var(--smallRadius);
+}
+
+.blogGrid {
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to top,
+        transparent,
+        #000 20% 100%,
+        transparent
+    );
 }
 
 .blogGrid ,
@@ -1163,12 +1180,17 @@ font-size: clamp(1.75rem, 1.5rem + 1vw, 2.25rem);
 .blueDot {
     position: absolute;
     background: #3BC2F2;
+    background-size: cover;
     width: 130px;
     height: 130px;
     border-radius: 130px;
     left: 0;
     bottom: 15%;
+    
+    /* position: relative; */
 }
+
+
 
 .pinkDot {
     width: 50px;
