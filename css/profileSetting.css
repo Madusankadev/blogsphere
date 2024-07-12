@@ -5,14 +5,14 @@
 }
 
 .profileSet img{
-    width: 40px;
+    width: 100%;
     cursor: pointer;
     margin-bottom: 20px;
 }
 
 .profileSet h4 p{
     color: var(--darkText);
-    font-size: var(--heading22);
+    font-size: 18px;
 }
 
 .profileSet p{
@@ -23,9 +23,6 @@
     margin-top: 15%;
 }
 
-.profileSet h4, p, button, img{
-    margin-left: 10%;
-}
 
 .sm{
     display: flex;
