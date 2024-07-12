@@ -201,9 +201,21 @@
 .collotionTextBox {
     position: absolute;
     bottom: 0;
-    padding-bottom: 18px;
+    padding-bottom: 12px;
+    padding-top: 12px;
     padding-left: 20px;
+    padding-right: 20px;
     color: var(--darkText);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.dots3 {
+    transform: rotate(90deg);
+    cursor: pointer;
+    scale: .8;
 }
 
 .collectionImg {
