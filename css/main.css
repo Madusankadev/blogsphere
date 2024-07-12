@@ -1299,3 +1299,21 @@ font-size: clamp(1.75rem, 1.5rem + 1vw, 2.25rem);
 
 }
 
+.loadMore {
+    font-family: var(--mainFont);
+    text-align: center;
+    color: var(--darkText);
+    text-decoration: underline;
+}
+
+.footerBox {
+    width: 100%;
+    border-bottom: .4px solid rgba(202, 221, 250, .85);
+    font-family: var(--mainFont);
+    opacity: .5;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+
