@@ -216,6 +216,8 @@ body {
     border-bottom: 0;
 }
 
+
+
 .categorySilderBox > .categoryCard:nth-child(2) {
     scale: 1.2;
     z-index: 9;
@@ -238,6 +240,18 @@ body {
     background: var(--healthColor);
     position: absolute;
     bottom: 0;
+}
+
+.categoryLine1 {
+    background: var(--economyColor) ;
+}
+
+.categoryLine2 {
+    background: var(--techColor);
+}
+
+.categoryLine3 {
+    background: var(--scienceColor);
 }
 
 @media screen and (max-width: 1000px) {
@@ -296,7 +310,7 @@ body {
     background: #F8DED9;
     padding: 32px;
     padding-bottom: 80px;
-    width: 33%;
+    /* width: 33%; */
     border-radius: var(--smallRadius);
     border-top-right-radius: 130px;
     padding-top: 80px;
@@ -321,7 +335,6 @@ body {
     font-size: 14px;
     font-weight: 100;
     display: block;
-    margin-top: 70px;
 }
 
 .infoCard p {
@@ -329,13 +342,17 @@ body {
     font-size: var(--text18);
 }
 
+.infoCard1 {
+    scale: .9;
+}
+
 .infoCard2 {
     background: #CDC8E6;
-    scale: .8;
+    scale: .9;
 }
 
 .infoCard3 {
-    scale: .7;
+    scale: .9;
 }
 
 footer section {
