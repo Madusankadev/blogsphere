@@ -909,7 +909,7 @@ font-size: clamp(1.75rem, 1.5rem + 1vw, 2.25rem);
 
 .blogDisplayChange .blogGrid:hover,
 .blogList:hover {
-    background: #caf5e4;
+    background: #e8e8e8;
 }
 
 .blogResult {
@@ -976,7 +976,7 @@ font-size: clamp(1.75rem, 1.5rem + 1vw, 2.25rem);
 }
 
 .closeFilter:hover {
-    background: var(--themeColor);
+    background: #E9E9E9;
 }
 
 .searchResult {
