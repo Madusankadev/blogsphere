@@ -21,6 +21,9 @@ let popup8 = document.getElementById("popup8");
 let popup9 = document.getElementById("popup9");
 let popup10 = document.getElementById("popup10");
 let popup11 = document.getElementById("popup11");
+let popup12 = document.getElementById("popup12");
+let popup13 = document.getElementById("popup13");
+let popup14 = document.getElementById("popup14");
 
 
 function openPopup1() {
@@ -48,6 +51,33 @@ function closePopup3() {
     popup1.classList.remove("open-popup");
     popup2.classList.remove("open-popup");
     popup3.classList.remove("open-popup");
+}
+
+function openPopup12() {
+    popup12.classList.add("open-popup")
+}
+
+function closePopup12() {
+    popup12.classList.remove("open-popup");
+}
+
+function openPopup13() {
+    popup13.classList.add("open-popup")
+}
+
+function closePopup13() {
+    popup12.classList.remove("open-popup");
+    popup13.classList.remove("open-popup");
+}
+
+function openPopup14() {
+    popup14.classList.add("open-popup")
+}
+
+function closePopup14() {
+    popup12.classList.remove("open-popup");
+    popup13.classList.remove("open-popup");
+    popup14.classList.remove("open-popup");
 }
 
 function closePopup4() {
