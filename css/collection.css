@@ -221,10 +221,13 @@
     bottom: 10px;
     right: 22px;
     font-family: var(--mainFont);
-    font-weight: 600;
     color: var(--darkText);
-    text-decoration: underline;
     cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 8px 22px;
+    z-index: 99;
 }
 
 .collectionImgTravel {
