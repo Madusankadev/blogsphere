@@ -110,6 +110,10 @@ body {
     background: var(--economyColor);
 }
 
+.techCard {
+    background: var(--techColor);
+}
+
 .blogAdds {
     background: var(--blogAddsColor);
     padding-top: 150px;
