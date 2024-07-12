@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -14,21 +16,28 @@
                 <nav class="nav">
                     <div class="container navBox navBar">
                         <div>
-                            <img src="./icon/Blogs.svg" alt="logo" height="32" >
+                            <a href="./index.html">
+                            <img src="./icon/Blogs.svg" alt="logo" height="32">
+                        </a>
                         </div>
-        
+
                         <div class="mobileChangeNav" id="mobileChangeNav">
                             <div class="closeBtn" onclick="closeBtn()">
                                 <img src="./icon/close.svg" alt="close menu" height="22">
                             </div>
+
                             <ul >
-                                <li><div class="navMemberBtn">Become a Member</div></li>
-                                <li><a href="#" class="navLink">About Us</a></li>
-                                <li><a href="search.html" class="navLink">Search</a></li>
+                            
+                                <li>
+                                    <div class="navMemberBtn">Become a Member</div>
+                                </li>
+                                <li><a href="./aboutUs.html" class="navLink">About Us</a></li>
+                                <li><a href="./search.html" class="navLink">Search</a></li>
+
                                 <li><a href="#" class="navLink">All</a></li>
                             </ul>
                         </div>
-        
+
                         <div class="mobileMenuBtn" id="mobileMenuBtn" onclick="openBtn()">
                             <img src="./icon/menu.svg" alt="menu" height="32">
                         </div>
@@ -41,7 +50,9 @@
             <div class="heroContent">
 
                 <div class="lightBlueDot"></div>
-                <div class="blueDot"></div>
+                <div class="blueDot">
+                    <div class="blueDotImg"></div>
+                </div>
                 <div class="pinkDot"></div>
                 <div class="yellowDot"></div>
                 <div class="heroText">
@@ -50,9 +61,10 @@
                             Dive into a World of Ideas & Inspiration
                         </h1>
                         <p>
-                            Share your stories or discover diverse articles. Join our community of writers and readers to connect and engage.
+                            Share your stories or discover diverse articles. Join our community of writers and readers
+                            to connect and engage.
                         </p>
-    
+
                         <div class="heroBtnBox">
                             <button class="heroBtn">Read</button>
                             <button class="heroBtn">Write Blog</button>
@@ -62,31 +74,31 @@
                 <div class="heroImgBox">
                     <div class="heroColumns">
                         <div>
-                          <img src="./img/hero1.jpg" alt="">  
+                            <img src="./img/hero1.jpg" alt="" id="hero1">
                         </div>
                         <div>
-                            <img src="./img/hero2.jpg" alt=""> 
+                            <img src="./img/hero2.jpg" alt="" id="hero2">
                         </div>
                     </div>
 
                     <div class="heroColumns">
                         <div>
-                          <img src="./img/hero3.jpg" alt="">  
+                            <img src="./img/hero3.jpg" alt="" id="hero3">
                         </div>
                         <div>
-                            <img src="./img/hero4.jpg" alt=""> 
+                            <img src="./img/hero4.jpg" alt="" id="hero4">
                         </div>
                         <div>
-                            <img src="./img/hero5.jpg" alt=""> 
+                            <img src="./img/hero5.jpg" alt="" id="hero5">
                         </div>
                     </div>
 
                     <div class="heroColumns mobileHiddenColumn">
                         <div>
-                          <img src="./img/hero6.jpg" alt="">  
+                            <img src="./img/hero6.jpg" alt="" id="hero6">
                         </div>
                         <div>
-                            <img src="./img/hero7.jpg" alt=""> 
+                            <img src="./img/hero7.jpg" alt="" id="hero7">
                         </div>
                     </div>
 
@@ -105,26 +117,28 @@
                 <!-- column one -->
                 <div class="blogColumns">
 
-                    <div class="blogCard fashionCard">
+                    <div class="blogCard educationCard">
                         <div class="fasioImg">
-                            <img src="./img/fasioImg.jpg" alt="fasioImg" width="100%">
+                            <img src="./img/education.jpg" alt="educatinImg" width="100%" >
                         </div>
                         <div class="blogCardText">
-                            <h2>MechaMaven: the Educational Robot Explorer</h2>
-                            <p>5 min Read</p>
-                            <h4>Fasion</h4>
+                            <h2>Academic: The Significance of Graduation Day</h2>
+                            <p>6 min Read</p>
+                            <h4>Education</h4>
                         </div>
                     </div>
 
-                    <div class="blogCard healthCard">
+                    <div class="blogCard foodCard">
+                        <a href="./foodBlog.html" style="text-decoration: none;">
                         <div class="fasioImg">
-                            <img src="./img/tech.jpg" alt="fasioImg" width="100%">
+                            <img src="./img/food.jpg" alt="foodImg" width="100%">
                         </div>
                         <div class="blogCardText">
-                            <h2>MechaMaven: the Educational Robot Explorer</h2>
-                            <p>5 min Read</p>
-                            <h4>Tech</h4>
+                            <h2>Desserts: Mini Lemon Cheesecakes</h2>
+                            <p>4 min Read</p>
+                            <h4>Food</h4>
                         </div>
+                    </a>
                     </div>
                     
                     <div class="blogCard blogAdds">
@@ -141,20 +155,20 @@
 
                     <div class="blogCard healthCard">
                         <div class="fasioImg">
-                            <img src="./img/healthImg.jpg" alt="healthImg" width="100%">
+                            <img src="./img/health.jpg" alt="healthImg" width="100%">
                         </div>
                         <div class="blogCardText">
-                            <h2>MechaMaven: the Educational Robot Explorer</h2>
+                            <h2>Fresh: The Physical and Mental Benefits</h2>
                             <p>5 min Read</p>
                             <h4>Health</h4>
                         </div>
                     </div>
 
-                    <div class="blogCard educationCard">
+                    <div class="blogCard economyCard">
                         <div class="blogCardText">
-                            <h2>MechaMaven: the Educational Robot Explorer</h2>
-                            <p>5 min Read</p>
-                            <h4>Education</h4>
+                            <h2>Power: Maximizing Your Financial Growth</h2>
+                            <p>3 min Read</p>
+                            <h4>Economy</h4>
                         </div>
                     </div>
                     
@@ -167,10 +181,10 @@
 
                     <div class="blogCard scienceCard">
                         <div class="fasioImg">
-                            <img src="./img/scienceImg.jpg" alt="healthImg" width="100%">
+                            <img src="./img/science.jpg" alt="healthImg" width="100%">
                         </div>
                         <div class="blogCardText">
-                            <h2>MechaMaven: the Educational Robot Explorer</h2>
+                            <h2>Innovations: Inside the Laboratory</h2>
                             <p>5 min Read</p>
                             <h4>science</h4>
                         </div>
@@ -182,33 +196,33 @@
                 <!-- column tree -->
                 <div class="blogColumns">
 
-                    <div class="blogCard foodCard">
+                    <div class="blogCard techCard">
                         <div class="blogCardText">
-                            <h2>MechaMaven: the Educational Robot Explorer</h2>
-                            <p>5 min Read</p>
-                            <h4>Food</h4>
+                            <h2>Integration: Art and Architecture</h2>
+                            <p>4 min Read</p>
+                            <h4>Tech</h4>
                         </div>
                     </div>
 
                     <div class="blogCard travelCard">
                         <div class="fasioImg">
-                            <img src="./img/travelImg.jpg" alt="travelImg" width="100%">
+                            <img src="./img/travel.jpg" alt="travelImg" width="100%">
                         </div>
                         <div class="blogCardText">
-                            <h2>MechaMaven: the Educational Robot Explorer</h2>
+                            <h2>Travel in Style: Kuramathi Island Resort – Maldives</h2>
                             <p>5 min Read</p>
                             <h4>Travel</h4>
                         </div>
                     </div>
                     
-                    <div class="blogCard economyCard">
-                        <div class="economyImg">
-                            <img src="./img/economyImg.jpg" alt="economyImg" width="100%">
+                    <div class="blogCard fashionCard">
+                        <div class="fasionImg">
+                            <img src="./img/fashionGirl.jpg" alt="fashionImg" width="100%">
                         </div>
                         <div class="blogCardText">
-                            <h2>MechaMaven: the Educational Robot Explorer</h2>
-                            <p>5 min Read</p>
-                            <h4>Economy</h4>
+                            <h2>Embracing Elegance: Off-Shoulder Dress</h2>
+                            <p>3 min Read</p>
+                            <h4>Fashion</h4>
                         </div>
                     </div>
 
@@ -218,15 +232,15 @@
         </section>
 
 
-        
+
 
     </section>
 
 
     <section>
         <div class="container bigAnimationTextBox" id="bigAnimationTextBox">
-            <h2 class="bigAnimationText bigAnimationTextTop" >We have wide </h2>
-            <h2 class="bigAnimationText bigAnimationTextBottom" >Range of Category</h2>
+            <h2 class="bigAnimationText bigAnimationTextTop">We have wide </h2>
+            <h2 class="bigAnimationText bigAnimationTextBottom">Range of Category</h2>
         </div>
     </section>
 
@@ -257,7 +271,7 @@
     </section>
 
     <section>
-        <div class="learnContentBox container">
+        <div class="learnContentBox container" style="margin-top: 120px;">
             <div>
                 <h2>Learn to </h2>
                 <h3>Write a Blog </h3>
@@ -307,12 +321,14 @@
         </div>
     </section>
 
-    <footer>
-        <section class="container">
-            <p></p>
-        </section>
-    </footer>
+    <section>
+        <div class="footerBox" style="margin-top: 100px;">
+            <p>&copy; blogspare. www.blogspare.com</p>
+        </div>
+    </section>
     <script src="./js/nav.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/hero.js"></script>
 </body>
+
 </html>
