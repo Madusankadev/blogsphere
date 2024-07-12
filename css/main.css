@@ -133,6 +133,11 @@ body {
     margin-top: 10px;
 }
 
+.blogCard img {
+    border-top-left-radius: var(--smallRadius);
+    border-top-right-radius: var(--smallRadius);
+}
+
 
 
 .blogCard {
