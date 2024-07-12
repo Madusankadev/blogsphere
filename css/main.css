@@ -110,10 +110,6 @@ body {
     background: var(--economyColor);
 }
 
-.techCard{
-    background: var(--techColor);
-}
-
 .blogAdds {
     background: var(--blogAddsColor);
     padding-top: 150px;
@@ -138,11 +134,6 @@ body {
 .blogCard {
     border-radius: var(--smallRadius);
     margin-bottom: 16px;
-}
-
-.blogCard img {
-    border-top-left-radius: var(--smallRadius);
-    border-top-right-radius: var(--smallRadius);
 }
 
 .blogCardText {
@@ -317,7 +308,7 @@ body {
     font-size: 14px;
     font-weight: 100;
     display: block;
-    /* margin-top: 10px; */
+    margin-top: 70px;
 }
 
 .infoCard p {
@@ -909,7 +900,7 @@ font-size: clamp(1.75rem, 1.5rem + 1vw, 2.25rem);
     mask-image: linear-gradient(
         to top,
         transparent,
-        #000 20% 100%,
+        #000 15% 100%,
         transparent
     );
 }
@@ -926,7 +917,7 @@ font-size: clamp(1.75rem, 1.5rem + 1vw, 2.25rem);
 
 .blogDisplayChange .blogGrid:hover,
 .blogList:hover {
-    background: #e8e8e8;
+    background: #caf5e4;
 }
 
 .blogResult {
@@ -993,7 +984,7 @@ font-size: clamp(1.75rem, 1.5rem + 1vw, 2.25rem);
 }
 
 .closeFilter:hover {
-    background: #E9E9E9;
+    background: var(--themeColor);
 }
 
 .searchResult {
