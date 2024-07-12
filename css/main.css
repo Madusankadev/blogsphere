@@ -110,6 +110,10 @@ body {
     background: var(--economyColor);
 }
 
+.techCard{
+    background: var(--techColor);
+}
+
 .blogAdds {
     background: var(--blogAddsColor);
     padding-top: 150px;
@@ -134,6 +138,11 @@ body {
 .blogCard {
     border-radius: var(--smallRadius);
     margin-bottom: 16px;
+}
+
+.blogCard img {
+    border-top-left-radius: var(--smallRadius);
+    border-top-right-radius: var(--smallRadius);
 }
 
 .blogCardText {
